@@ -7,6 +7,8 @@ const ProductRouter = require('./routes/productRoute');
 const Authrouter = require('./routes/authRoutes');
 const Userrouter = require('./routes/userRoute');
 const Cartrouter = require('./routes/cartRoute');
+const OrderRouter = require('./routes/ordersRoute');
+
 require('dotenv').config();
 
 // initialize express
@@ -21,5 +23,6 @@ app.use('/', Authrouter);
 app.use('/', ProductRouter);
 app.use('/', Userrouter);
 app.use('/', Cartrouter);
+app.use('/', OrderRouter);
 
 module.exports = app;
