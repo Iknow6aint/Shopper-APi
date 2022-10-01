@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const User = require('../models/userModel');
 
 // @route       PUT api/user/:user_id/update
